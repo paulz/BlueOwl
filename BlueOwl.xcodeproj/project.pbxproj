@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF267215D4B0E003B0726 /* AppDelegate.swift */; };
+		4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF269215D4B0E003B0726 /* ViewController.swift */; };
+		4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26B215D4B0E003B0726 /* Main.storyboard */; };
+		4BAFF26F215D4B0F003B0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26E215D4B0F003B0726 /* Assets.xcassets */; };
+		4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */; };
+		4BAFF27D215D4B0F003B0726 /* BlueOwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */; };
+		4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BAFF279215D4B0F003B0726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFF25C215D4B0E003B0726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAFF263215D4B0E003B0726;
+			remoteInfo = BlueOwl;
+		};
+		4BAFF284215D4B0F003B0726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFF25C215D4B0E003B0726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAFF263215D4B0E003B0726;
+			remoteInfo = BlueOwl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BAFF264215D4B0E003B0726 /* BlueOwl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueOwl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFF267215D4B0E003B0726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BAFF269215D4B0E003B0726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BAFF26C215D4B0E003B0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BAFF26E215D4B0F003B0726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BAFF271215D4B0F003B0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BAFF273215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAFF278215D4B0F003B0726 /* BlueOwlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueOwlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueOwlTests.swift; sourceTree = "<group>"; };
+		4BAFF27E215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAFF283215D4B0F003B0726 /* BlueOwlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueOwlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueOwlUITests.swift; sourceTree = "<group>"; };
+		4BAFF289215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BAFF261215D4B0E003B0726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF275215D4B0F003B0726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF280215D4B0F003B0726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BAFF25B215D4B0E003B0726 = {
+			isa = PBXGroup;
+			children = (
+				4BAFF266215D4B0E003B0726 /* BlueOwl */,
+				4BAFF27B215D4B0F003B0726 /* BlueOwlTests */,
+				4BAFF286215D4B0F003B0726 /* BlueOwlUITests */,
+				4BAFF265215D4B0E003B0726 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BAFF265215D4B0E003B0726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFF264215D4B0E003B0726 /* BlueOwl.app */,
+				4BAFF278215D4B0F003B0726 /* BlueOwlTests.xctest */,
+				4BAFF283215D4B0F003B0726 /* BlueOwlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BAFF266215D4B0E003B0726 /* BlueOwl */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFF267215D4B0E003B0726 /* AppDelegate.swift */,
+				4BAFF269215D4B0E003B0726 /* ViewController.swift */,
+				4BAFF26B215D4B0E003B0726 /* Main.storyboard */,
+				4BAFF26E215D4B0F003B0726 /* Assets.xcassets */,
+				4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */,
+				4BAFF273215D4B0F003B0726 /* Info.plist */,
+			);
+			path = BlueOwl;
+			sourceTree = "<group>";
+		};
+		4BAFF27B215D4B0F003B0726 /* BlueOwlTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */,
+				4BAFF27E215D4B0F003B0726 /* Info.plist */,
+			);
+			path = BlueOwlTests;
+			sourceTree = "<group>";
+		};
+		4BAFF286215D4B0F003B0726 /* BlueOwlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */,
+				4BAFF289215D4B0F003B0726 /* Info.plist */,
+			);
+			path = BlueOwlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BAFF263215D4B0E003B0726 /* BlueOwl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFF28C215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwl" */;
+			buildPhases = (
+				4BAFF260215D4B0E003B0726 /* Sources */,
+				4BAFF261215D4B0E003B0726 /* Frameworks */,
+				4BAFF262215D4B0E003B0726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueOwl;
+			productName = BlueOwl;
+			productReference = 4BAFF264215D4B0E003B0726 /* BlueOwl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BAFF277215D4B0F003B0726 /* BlueOwlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFF28F215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwlTests" */;
+			buildPhases = (
+				4BAFF274215D4B0F003B0726 /* Sources */,
+				4BAFF275215D4B0F003B0726 /* Frameworks */,
+				4BAFF276215D4B0F003B0726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BAFF27A215D4B0F003B0726 /* PBXTargetDependency */,
+			);
+			name = BlueOwlTests;
+			productName = BlueOwlTests;
+			productReference = 4BAFF278215D4B0F003B0726 /* BlueOwlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BAFF282215D4B0F003B0726 /* BlueOwlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFF292215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwlUITests" */;
+			buildPhases = (
+				4BAFF27F215D4B0F003B0726 /* Sources */,
+				4BAFF280215D4B0F003B0726 /* Frameworks */,
+				4BAFF281215D4B0F003B0726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BAFF285215D4B0F003B0726 /* PBXTargetDependency */,
+			);
+			name = BlueOwlUITests;
+			productName = BlueOwlUITests;
+			productReference = 4BAFF283215D4B0F003B0726 /* BlueOwlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BAFF25C215D4B0E003B0726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Paul Zabelin";
+				TargetAttributes = {
+					4BAFF263215D4B0E003B0726 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4BAFF277215D4B0F003B0726 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4BAFF263215D4B0E003B0726;
+					};
+					4BAFF282215D4B0F003B0726 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4BAFF263215D4B0E003B0726;
+					};
+				};
+			};
+			buildConfigurationList = 4BAFF25F215D4B0E003B0726 /* Build configuration list for PBXProject "BlueOwl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BAFF25B215D4B0E003B0726;
+			productRefGroup = 4BAFF265215D4B0E003B0726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BAFF263215D4B0E003B0726 /* BlueOwl */,
+				4BAFF277215D4B0F003B0726 /* BlueOwlTests */,
+				4BAFF282215D4B0F003B0726 /* BlueOwlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BAFF262215D4B0E003B0726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */,
+				4BAFF26F215D4B0F003B0726 /* Assets.xcassets in Resources */,
+				4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF276215D4B0F003B0726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF281215D4B0F003B0726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BAFF260215D4B0E003B0726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */,
+				4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF274215D4B0F003B0726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFF27D215D4B0F003B0726 /* BlueOwlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFF27F215D4B0F003B0726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BAFF27A215D4B0F003B0726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAFF263215D4B0E003B0726 /* BlueOwl */;
+			targetProxy = 4BAFF279215D4B0F003B0726 /* PBXContainerItemProxy */;
+		};
+		4BAFF285215D4B0F003B0726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAFF263215D4B0E003B0726 /* BlueOwl */;
+			targetProxy = 4BAFF284215D4B0F003B0726 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BAFF26B215D4B0E003B0726 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAFF26C215D4B0E003B0726 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAFF271215D4B0F003B0726 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BAFF28A215D4B0F003B0726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BAFF28B215D4B0F003B0726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BAFF28D215D4B0F003B0726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BAFF28E215D4B0F003B0726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BAFF290215D4B0F003B0726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
+			};
+			name = Debug;
+		};
+		4BAFF291215D4B0F003B0726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
+			};
+			name = Release;
+		};
+		4BAFF293215D4B0F003B0726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueOwl;
+			};
+			name = Debug;
+		};
+		4BAFF294215D4B0F003B0726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueOwl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BAFF25F215D4B0E003B0726 /* Build configuration list for PBXProject "BlueOwl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFF28A215D4B0F003B0726 /* Debug */,
+				4BAFF28B215D4B0F003B0726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFF28C215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFF28D215D4B0F003B0726 /* Debug */,
+				4BAFF28E215D4B0F003B0726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFF28F215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFF290215D4B0F003B0726 /* Debug */,
+				4BAFF291215D4B0F003B0726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFF292215D4B0F003B0726 /* Build configuration list for PBXNativeTarget "BlueOwlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFF293215D4B0F003B0726 /* Debug */,
+				4BAFF294215D4B0F003B0726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BAFF25C215D4B0E003B0726 /* Project object */;
+}
