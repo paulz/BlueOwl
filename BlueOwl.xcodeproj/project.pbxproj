@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		23319B93DC4C0C505BE30E56 /* Pods_UnitSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D088130133886EA766D57C50 /* Pods_UnitSpecs.framework */; };
 		28F06F790FD4540E06C7F0F1 /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467FBA055719461F72D3456E /* Pods_UITests.framework */; };
-		3897FAA03C700E147AD98054 /* Pods_BlueOwlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3039BA66555DE86B194A5B2B /* Pods_BlueOwlTests.framework */; };
 		4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF267215D4B0E003B0726 /* AppDelegate.swift */; };
 		4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF269215D4B0E003B0726 /* ViewController.swift */; };
 		4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26B215D4B0E003B0726 /* Main.storyboard */; };
 		4BAFF26F215D4B0F003B0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26E215D4B0F003B0726 /* Assets.xcassets */; };
 		4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */; };
-		4BAFF27D215D4B0F003B0726 /* BlueOwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */; };
 		4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */; };
-		536A1F6FB5EC57B23E7F90CB /* Pods_BlueOwlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE413E0E9AF60AF221226949 /* Pods_BlueOwlUITests.framework */; };
+		4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
 		F50D0C3EB404E30083F36438 /* Pods_BlueOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8634A66E5F410663749A599 /* Pods_BlueOwl.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,13 +53,13 @@
 		4BAFF271215D4B0F003B0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BAFF273215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BAFF278215D4B0F003B0726 /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueOwlTests.swift; sourceTree = "<group>"; };
 		4BAFF27E215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BAFF283215D4B0F003B0726 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueOwlUITests.swift; sourceTree = "<group>"; };
 		4BAFF289215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BAFF295215D8772003B0726 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		4BAFF296215D8772003B0726 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		4BAFF299215D893D003B0726 /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
 		6809F977D79F6CB6D63D8BF5 /* Pods-BlueOwlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwlTests/Pods-BlueOwlTests.release.xcconfig"; sourceTree = "<group>"; };
 		85F4799AC1965F567391EBA1 /* Pods-BlueOwlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwlUITests/Pods-BlueOwlUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3897FAA03C700E147AD98054 /* Pods_BlueOwlTests.framework in Frameworks */,
 				23319B93DC4C0C505BE30E56 /* Pods_UnitSpecs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536A1F6FB5EC57B23E7F90CB /* Pods_BlueOwlUITests.framework in Frameworks */,
 				28F06F790FD4540E06C7F0F1 /* Pods_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				4BAFF266215D4B0E003B0726 /* BlueOwl */,
-				4BAFF27B215D4B0F003B0726 /* BlueOwlTests */,
+				4BAFF27B215D4B0F003B0726 /* UnitSpecs */,
 				4BAFF286215D4B0F003B0726 /* BlueOwlUITests */,
 				4BAFF265215D4B0E003B0726 /* Products */,
 				EDB26BD055CFBDF043ACB4E1 /* Pods */,
@@ -137,13 +133,13 @@
 			path = BlueOwl;
 			sourceTree = "<group>";
 		};
-		4BAFF27B215D4B0F003B0726 /* BlueOwlTests */ = {
+		4BAFF27B215D4B0F003B0726 /* UnitSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				4BAFF27C215D4B0F003B0726 /* BlueOwlTests.swift */,
 				4BAFF27E215D4B0F003B0726 /* Info.plist */,
+				4BAFF299215D893D003B0726 /* FirstSpec.swift */,
 			);
-			path = BlueOwlTests;
+			path = UnitSpecs;
 			sourceTree = "<group>";
 		};
 		4BAFF286215D4B0F003B0726 /* BlueOwlUITests */ = {
@@ -268,6 +264,7 @@
 					};
 					4BAFF277215D4B0F003B0726 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 4BAFF263215D4B0E003B0726;
 					};
 					4BAFF282215D4B0F003B0726 = {
@@ -430,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAFF27D215D4B0F003B0726 /* BlueOwlTests.swift in Sources */,
+				4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,8 +631,9 @@
 			baseConfigurationReference = 39F1C24A02262E1CDE2E1679 /* Pods-UnitSpecs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlueOwlTests/Info.plist;
+				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,6 +641,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
@@ -654,8 +653,9 @@
 			baseConfigurationReference = 0DCEF2D01B9FD6DC7B6081D3 /* Pods-UnitSpecs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlueOwlTests/Info.plist;
+				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
