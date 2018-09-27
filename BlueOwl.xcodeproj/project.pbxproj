@@ -20,7 +20,9 @@
 		4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
 		4BFFEF4C215D9B24006C3A3D /* SwiftOwl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7340D0A9A5B3D4BD1FDC5C88 /* Pods_UnitSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC3B9409992F90B667F559D /* Pods_UnitSpecs.framework */; };
 		E327D23CA5CC03EA67C468FA /* Pods_AppSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2941CAAEC89C40F5FAE4A9A /* Pods_AppSpecs.framework */; };
+		ED9C9D20E56EF161AFD2AB85 /* Pods_SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915E773AE12BE9D1F3236BF /* Pods_SwiftOwl.framework */; };
 		F50D0C3EB404E30083F36438 /* Pods_BlueOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8634A66E5F410663749A599 /* Pods_BlueOwl.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2915E773AE12BE9D1F3236BF /* Pods_SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC3B9409992F90B667F559D /* Pods_UnitSpecs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitSpecs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F27487C45E1EEBC612CA494 /* Pods-BlueOwl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.release.xcconfig"; sourceTree = "<group>"; };
 		35325C161050E1ED4488B904 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		45C47D67A2E27E2B75865122 /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +107,11 @@
 		4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOwlTests.swift; sourceTree = "<group>"; };
 		4BFFEF47215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
+		7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		9014032B51ABBEC3CD8BD06C /* Pods-AppSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppSpecs/Pods-AppSpecs.debug.xcconfig"; sourceTree = "<group>"; };
+		A206C926978CBFD0DBE69863 /* Pods-SwiftOwl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOwl.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOwl/Pods-SwiftOwl.release.xcconfig"; sourceTree = "<group>"; };
+		A3C7C97DF30604CED8E5DCCA /* Pods-SwiftOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOwl/Pods-SwiftOwl.debug.xcconfig"; sourceTree = "<group>"; };
+		A646CAEB8A5010F713D5E7E3 /* Pods-UnitSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9A85BEC5EA91508269A65C /* Pods-AppSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppSpecs/Pods-AppSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		C2941CAAEC89C40F5FAE4A9A /* Pods_AppSpecs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSpecs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8634A66E5F410663749A599 /* Pods_BlueOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9C9D20E56EF161AFD2AB85 /* Pods_SwiftOwl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */,
+				7340D0A9A5B3D4BD1FDC5C88 /* Pods_UnitSpecs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +254,8 @@
 				E8634A66E5F410663749A599 /* Pods_BlueOwl.framework */,
 				467FBA055719461F72D3456E /* Pods_UITests.framework */,
 				C2941CAAEC89C40F5FAE4A9A /* Pods_AppSpecs.framework */,
+				2915E773AE12BE9D1F3236BF /* Pods_SwiftOwl.framework */,
+				2CC3B9409992F90B667F559D /* Pods_UnitSpecs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +269,10 @@
 				35325C161050E1ED4488B904 /* Pods-UITests.release.xcconfig */,
 				9014032B51ABBEC3CD8BD06C /* Pods-AppSpecs.debug.xcconfig */,
 				BA9A85BEC5EA91508269A65C /* Pods-AppSpecs.release.xcconfig */,
+				A3C7C97DF30604CED8E5DCCA /* Pods-SwiftOwl.debug.xcconfig */,
+				A206C926978CBFD0DBE69863 /* Pods-SwiftOwl.release.xcconfig */,
+				A646CAEB8A5010F713D5E7E3 /* Pods-UnitSpecs.debug.xcconfig */,
+				7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -323,6 +339,7 @@
 				4BAFF27F215D4B0F003B0726 /* Sources */,
 				4BAFF280215D4B0F003B0726 /* Frameworks */,
 				4BAFF281215D4B0F003B0726 /* Resources */,
+				AFEAF402316C6D2C74CB664F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BFFEF51215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwl" */;
 			buildPhases = (
+				ABF2821E572C20C0DBAB986E /* [CP] Check Pods Manifest.lock */,
 				4BFFEF31215D9B24006C3A3D /* Sources */,
 				4BFFEF32215D9B24006C3A3D /* Frameworks */,
 				4BFFEF33215D9B24006C3A3D /* Headers */,
@@ -356,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "UnitSpecs" */;
 			buildPhases = (
+				EACEC67B3FBD2AACAB0198D4 /* [CP] Check Pods Manifest.lock */,
 				4BFFEF3A215D9B24006C3A3D /* Sources */,
 				4BFFEF3B215D9B24006C3A3D /* Frameworks */,
 				4BFFEF3C215D9B24006C3A3D /* Resources */,
+				3F2926C6D0418360BFC04104 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +486,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F2926C6D0418360BFC04104 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		858AD17414E9D7288804DC2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,6 +522,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF2821E572C20C0DBAB986E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftOwl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEAF402316C6D2C74CB664F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UITests/Pods-UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITests/Pods-UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0247BA42FC7E33EC6AAA8D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -534,6 +612,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BlueOwl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EACEC67B3FBD2AACAB0198D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnitSpecs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -690,6 +786,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -743,6 +840,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -761,7 +859,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -780,7 +877,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -800,7 +896,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
 			};
@@ -821,7 +916,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
 			};
@@ -831,7 +925,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45C47D67A2E27E2B75865122 /* Pods-UITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -841,7 +934,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BlueOwl;
 			};
@@ -851,7 +943,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35325C161050E1ED4488B904 /* Pods-UITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -861,7 +952,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.BlueOwlUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BlueOwl;
 			};
@@ -869,6 +959,7 @@
 		};
 		4BFFEF4D215D9B24006C3A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C7C97DF30604CED8E5DCCA /* Pods-SwiftOwl.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -889,7 +980,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -898,6 +988,7 @@
 		};
 		4BFFEF4E215D9B24006C3A3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A206C926978CBFD0DBE69863 /* Pods-SwiftOwl.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -917,7 +1008,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -926,8 +1016,8 @@
 		};
 		4BFFEF4F215D9B24006C3A3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A646CAEB8A5010F713D5E7E3 /* Pods-UnitSpecs.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -938,7 +1028,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
 			};
@@ -946,8 +1035,8 @@
 		};
 		4BFFEF50215D9B24006C3A3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -957,7 +1046,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
 			};
