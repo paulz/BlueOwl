@@ -13,13 +13,13 @@
 		4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26B215D4B0E003B0726 /* Main.storyboard */; };
 		4BAFF26F215D4B0F003B0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26E215D4B0F003B0726 /* Assets.xcassets */; };
 		4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */; };
-		4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */; };
+		4BAFF288215D4B0F003B0726 /* UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* UITest.swift */; };
 		4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
 		4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
-		4BFFEF46215D9B24006C3A3D /* SwiftOwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */; };
 		4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
 		4BFFEF4C215D9B24006C3A3D /* SwiftOwl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BFFEF54215D9E92006C3A3D /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
 		7340D0A9A5B3D4BD1FDC5C88 /* Pods_UnitSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC3B9409992F90B667F559D /* Pods_UnitSpecs.framework */; };
 		E327D23CA5CC03EA67C468FA /* Pods_AppSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2941CAAEC89C40F5FAE4A9A /* Pods_AppSpecs.framework */; };
 		ED9C9D20E56EF161AFD2AB85 /* Pods_SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915E773AE12BE9D1F3236BF /* Pods_SwiftOwl.framework */; };
@@ -95,7 +95,7 @@
 		4BAFF278215D4B0F003B0726 /* AppSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFF27E215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BAFF283215D4B0F003B0726 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueOwlUITests.swift; sourceTree = "<group>"; };
+		4BAFF287215D4B0F003B0726 /* UITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITest.swift; sourceTree = "<group>"; };
 		4BAFF289215D4B0F003B0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BAFF295215D8772003B0726 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BAFF296215D8772003B0726 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
@@ -104,7 +104,6 @@
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFFEF3E215D9B24006C3A3D /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOwlTests.swift; sourceTree = "<group>"; };
 		4BFFEF47215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
 		7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +167,7 @@
 			children = (
 				4BAFF266215D4B0E003B0726 /* BlueOwl */,
 				4BAFF27B215D4B0F003B0726 /* AppSpecs */,
-				4BAFF286215D4B0F003B0726 /* BlueOwlUITests */,
+				4BAFF286215D4B0F003B0726 /* UITests */,
 				4BFFEF37215D9B24006C3A3D /* SwiftOwl */,
 				4BFFEF44215D9B24006C3A3D /* UnitSpecs */,
 				4BAFF265215D4B0E003B0726 /* Products */,
@@ -212,13 +211,13 @@
 			path = AppSpecs;
 			sourceTree = "<group>";
 		};
-		4BAFF286215D4B0F003B0726 /* BlueOwlUITests */ = {
+		4BAFF286215D4B0F003B0726 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */,
+				4BAFF287215D4B0F003B0726 /* UITest.swift */,
 				4BAFF289215D4B0F003B0726 /* Info.plist */,
 			);
-			path = BlueOwlUITests;
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		4BAFF298215D87D9003B0726 /* Supporting Files */ = {
@@ -242,7 +241,6 @@
 		4BFFEF44215D9B24006C3A3D /* UnitSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */,
 				4BFFEF47215D9B24006C3A3D /* Info.plist */,
 			);
 			path = UnitSpecs;
@@ -660,7 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */,
+				4BAFF288215D4B0F003B0726 /* UITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFFEF46215D9B24006C3A3D /* SwiftOwlTests.swift in Sources */,
+				4BFFEF54215D9E92006C3A3D /* FirstSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,7 +924,7 @@
 			baseConfigurationReference = 45C47D67A2E27E2B75865122 /* Pods-UITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -944,7 +942,7 @@
 			baseConfigurationReference = 35325C161050E1ED4488B904 /* Pods-UITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BlueOwlUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
