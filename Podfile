@@ -3,7 +3,7 @@ platform :ios, '11.0'
 target 'BlueOwl' do
     use_frameworks!
 
-    target 'UnitSpecs' do
+    target 'AppSpecs' do
         inherit! :search_paths
         pod 'Quick'
         pod 'Nimble'

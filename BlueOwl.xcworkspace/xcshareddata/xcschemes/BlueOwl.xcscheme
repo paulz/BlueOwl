@@ -45,8 +45,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4BAFF277215D4B0F003B0726"
-               BuildableName = "UnitSpecs.xctest"
-               BlueprintName = "UnitSpecs"
+               BuildableName = "AppSpecs.xctest"
+               BlueprintName = "AppSpecs"
                ReferencedContainer = "container:BlueOwl.xcodeproj">
             </BuildableReference>
          </TestableReference>
