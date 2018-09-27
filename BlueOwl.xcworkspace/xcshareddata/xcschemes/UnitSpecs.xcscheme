@@ -22,6 +22,16 @@
                ReferencedContainer = "container:BlueOwl.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFFEF3D215D9B24006C3A3D"
+               BuildableName = "SwiftOwlTests.xctest"
+               BlueprintName = "SwiftOwlTests"
+               ReferencedContainer = "container:BlueOwl.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>

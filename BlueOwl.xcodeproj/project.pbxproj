@@ -16,6 +16,11 @@
 		4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */; };
 		4BAFF288215D4B0F003B0726 /* BlueOwlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* BlueOwlUITests.swift */; };
 		4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
+		4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
+		4BFFEF46215D9B24006C3A3D /* SwiftOwlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */; };
+		4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
+		4BFFEF4C215D9B24006C3A3D /* SwiftOwl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F50D0C3EB404E30083F36438 /* Pods_BlueOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8634A66E5F410663749A599 /* Pods_BlueOwl.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +39,42 @@
 			remoteGlobalIDString = 4BAFF263215D4B0E003B0726;
 			remoteInfo = BlueOwl;
 		};
+		4BFFEF40215D9B24006C3A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFF25C215D4B0E003B0726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BFFEF35215D9B24006C3A3D;
+			remoteInfo = SwiftOwl;
+		};
+		4BFFEF42215D9B24006C3A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFF25C215D4B0E003B0726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAFF263215D4B0E003B0726;
+			remoteInfo = BlueOwl;
+		};
+		4BFFEF49215D9B24006C3A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFF25C215D4B0E003B0726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BFFEF35215D9B24006C3A3D;
+			remoteInfo = SwiftOwl;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BFFEF52215D9B24006C3A3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4BFFEF4C215D9B24006C3A3D /* SwiftOwl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AB053F6218FECA3A52C4154 /* Pods-BlueOwlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwlTests/Pods-BlueOwlTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +100,12 @@
 		4BAFF295215D8772003B0726 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BAFF296215D8772003B0726 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4BAFF299215D893D003B0726 /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
+		4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
+		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOwlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOwlTests.swift; sourceTree = "<group>"; };
+		4BFFEF47215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
 		6809F977D79F6CB6D63D8BF5 /* Pods-BlueOwlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwlTests/Pods-BlueOwlTests.release.xcconfig"; sourceTree = "<group>"; };
 		85F4799AC1965F567391EBA1 /* Pods-BlueOwlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwlUITests/Pods-BlueOwlUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50D0C3EB404E30083F36438 /* Pods_BlueOwl.framework in Frameworks */,
+				4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +141,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BFFEF32215D9B24006C3A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFFEF3B215D9B24006C3A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,6 +165,8 @@
 				4BAFF266215D4B0E003B0726 /* BlueOwl */,
 				4BAFF27B215D4B0F003B0726 /* UnitSpecs */,
 				4BAFF286215D4B0F003B0726 /* BlueOwlUITests */,
+				4BFFEF37215D9B24006C3A3D /* SwiftOwl */,
+				4BFFEF44215D9B24006C3A3D /* SwiftOwlTests */,
 				4BAFF265215D4B0E003B0726 /* Products */,
 				EDB26BD055CFBDF043ACB4E1 /* Pods */,
 				A154CDA8E2C00DF8F8A8AA34 /* Frameworks */,
@@ -116,6 +180,8 @@
 				4BAFF264215D4B0E003B0726 /* BlueOwl.app */,
 				4BAFF278215D4B0F003B0726 /* UnitSpecs.xctest */,
 				4BAFF283215D4B0F003B0726 /* UITests.xctest */,
+				4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */,
+				4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +226,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4BFFEF37215D9B24006C3A3D /* SwiftOwl */ = {
+			isa = PBXGroup;
+			children = (
+				4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */,
+				4BFFEF39215D9B24006C3A3D /* Info.plist */,
+			);
+			path = SwiftOwl;
+			sourceTree = "<group>";
+		};
+		4BFFEF44215D9B24006C3A3D /* SwiftOwlTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */,
+				4BFFEF47215D9B24006C3A3D /* Info.plist */,
+			);
+			path = SwiftOwlTests;
+			sourceTree = "<group>";
+		};
 		A154CDA8E2C00DF8F8A8AA34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +275,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4BFFEF33215D9B24006C3A3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		4BAFF263215D4B0E003B0726 /* BlueOwl */ = {
 			isa = PBXNativeTarget;
@@ -200,10 +295,12 @@
 				4BAFF260215D4B0E003B0726 /* Sources */,
 				4BAFF261215D4B0E003B0726 /* Frameworks */,
 				4BAFF262215D4B0E003B0726 /* Resources */,
+				4BFFEF52215D9B24006C3A3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4BFFEF4A215D9B24006C3A3D /* PBXTargetDependency */,
 			);
 			name = BlueOwl;
 			productName = BlueOwl;
@@ -249,13 +346,50 @@
 			productReference = 4BAFF283215D4B0F003B0726 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4BFFEF35215D9B24006C3A3D /* SwiftOwl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFFEF51215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwl" */;
+			buildPhases = (
+				4BFFEF31215D9B24006C3A3D /* Sources */,
+				4BFFEF32215D9B24006C3A3D /* Frameworks */,
+				4BFFEF33215D9B24006C3A3D /* Headers */,
+				4BFFEF34215D9B24006C3A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOwl;
+			productName = SwiftOwl;
+			productReference = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BFFEF3D215D9B24006C3A3D /* SwiftOwlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwlTests" */;
+			buildPhases = (
+				4BFFEF3A215D9B24006C3A3D /* Sources */,
+				4BFFEF3B215D9B24006C3A3D /* Frameworks */,
+				4BFFEF3C215D9B24006C3A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BFFEF41215D9B24006C3A3D /* PBXTargetDependency */,
+				4BFFEF43215D9B24006C3A3D /* PBXTargetDependency */,
+			);
+			name = SwiftOwlTests;
+			productName = SwiftOwlTests;
+			productReference = 4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4BAFF25C215D4B0E003B0726 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Paul Zabelin";
 				TargetAttributes = {
@@ -269,6 +403,13 @@
 					};
 					4BAFF282215D4B0F003B0726 = {
 						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4BAFF263215D4B0E003B0726;
+					};
+					4BFFEF35215D9B24006C3A3D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4BFFEF3D215D9B24006C3A3D = {
+						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 4BAFF263215D4B0E003B0726;
 					};
 				};
@@ -289,6 +430,8 @@
 				4BAFF263215D4B0E003B0726 /* BlueOwl */,
 				4BAFF277215D4B0F003B0726 /* UnitSpecs */,
 				4BAFF282215D4B0F003B0726 /* UITests */,
+				4BFFEF35215D9B24006C3A3D /* SwiftOwl */,
+				4BFFEF3D215D9B24006C3A3D /* SwiftOwlTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +455,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4BAFF281215D4B0F003B0726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFFEF34215D9B24006C3A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFFEF3C215D9B24006C3A3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,6 +580,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BFFEF31215D9B24006C3A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFFEF3A215D9B24006C3A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFFEF46215D9B24006C3A3D /* SwiftOwlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -435,6 +607,21 @@
 			isa = PBXTargetDependency;
 			target = 4BAFF263215D4B0E003B0726 /* BlueOwl */;
 			targetProxy = 4BAFF284215D4B0F003B0726 /* PBXContainerItemProxy */;
+		};
+		4BFFEF41215D9B24006C3A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BFFEF35215D9B24006C3A3D /* SwiftOwl */;
+			targetProxy = 4BFFEF40215D9B24006C3A3D /* PBXContainerItemProxy */;
+		};
+		4BFFEF43215D9B24006C3A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAFF263215D4B0E003B0726 /* BlueOwl */;
+			targetProxy = 4BFFEF42215D9B24006C3A3D /* PBXContainerItemProxy */;
+		};
+		4BFFEF4A215D9B24006C3A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BFFEF35215D9B24006C3A3D /* SwiftOwl */;
+			targetProxy = 4BFFEF49215D9B24006C3A3D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -692,6 +879,104 @@
 			};
 			name = Release;
 		};
+		4BFFEF4D215D9B24006C3A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftOwl/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BFFEF4E215D9B24006C3A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftOwl/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BFFEF4F215D9B24006C3A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftOwlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
+			};
+			name = Debug;
+		};
+		4BFFEF50215D9B24006C3A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftOwlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueOwl.app/BlueOwl";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +1012,24 @@
 			buildConfigurations = (
 				4BAFF293215D4B0F003B0726 /* Debug */,
 				4BAFF294215D4B0F003B0726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BFFEF51215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFFEF4D215D9B24006C3A3D /* Debug */,
+				4BFFEF4E215D9B24006C3A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFFEF4F215D9B24006C3A3D /* Debug */,
+				4BFFEF50215D9B24006C3A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
