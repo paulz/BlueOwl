@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BAFF263215D4B0E003B0726"
-               BuildableName = "BlueOwl.app"
-               BlueprintName = "BlueOwl"
+               BlueprintIdentifier = "4BFFEF35215D9B24006C3A3D"
+               BuildableName = "SwiftOwl.framework"
+               BlueprintName = "SwiftOwl"
                ReferencedContainer = "container:BlueOwl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,30 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      systemAttachmentLifetime = "keepNever"
-      userAttachmentLifetime = "keepAlways"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BAFF282215D4B0F003B0726"
-               BuildableName = "UITests.xctest"
-               BlueprintName = "UITests"
-               ReferencedContainer = "container:BlueOwl.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BAFF277215D4B0F003B0726"
-               BuildableName = "AppSpecs.xctest"
-               BlueprintName = "AppSpecs"
-               ReferencedContainer = "container:BlueOwl.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -64,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BAFF263215D4B0E003B0726"
-            BuildableName = "BlueOwl.app"
-            BlueprintName = "BlueOwl"
+            BlueprintIdentifier = "4BFFEF35215D9B24006C3A3D"
+            BuildableName = "SwiftOwl.framework"
+            BlueprintName = "SwiftOwl"
             ReferencedContainer = "container:BlueOwl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BAFF263215D4B0E003B0726"
-            BuildableName = "BlueOwl.app"
-            BlueprintName = "BlueOwl"
+            BlueprintIdentifier = "4BFFEF35215D9B24006C3A3D"
+            BuildableName = "SwiftOwl.framework"
+            BlueprintName = "SwiftOwl"
             ReferencedContainer = "container:BlueOwl.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -102,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BAFF263215D4B0E003B0726"
-            BuildableName = "BlueOwl.app"
-            BlueprintName = "BlueOwl"
+            BlueprintIdentifier = "4BFFEF35215D9B24006C3A3D"
+            BuildableName = "SwiftOwl.framework"
+            BlueprintName = "SwiftOwl"
             ReferencedContainer = "container:BlueOwl.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

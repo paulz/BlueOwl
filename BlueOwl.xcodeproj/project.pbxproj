@@ -99,7 +99,7 @@
 		4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOwlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFFEF3E215D9B24006C3A3D /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOwlTests.swift; sourceTree = "<group>"; };
 		4BFFEF47215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				4BAFF27B215D4B0F003B0726 /* AppSpecs */,
 				4BAFF286215D4B0F003B0726 /* BlueOwlUITests */,
 				4BFFEF37215D9B24006C3A3D /* SwiftOwl */,
-				4BFFEF44215D9B24006C3A3D /* SwiftOwlTests */,
+				4BFFEF44215D9B24006C3A3D /* UnitSpecs */,
 				4BAFF265215D4B0E003B0726 /* Products */,
 				EDB26BD055CFBDF043ACB4E1 /* Pods */,
 				A154CDA8E2C00DF8F8A8AA34 /* Frameworks */,
@@ -175,7 +175,7 @@
 				4BAFF278215D4B0F003B0726 /* AppSpecs.xctest */,
 				4BAFF283215D4B0F003B0726 /* UITests.xctest */,
 				4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */,
-				4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */,
+				4BFFEF3E215D9B24006C3A3D /* UnitSpecs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,13 +229,13 @@
 			path = SwiftOwl;
 			sourceTree = "<group>";
 		};
-		4BFFEF44215D9B24006C3A3D /* SwiftOwlTests */ = {
+		4BFFEF44215D9B24006C3A3D /* UnitSpecs */ = {
 			isa = PBXGroup;
 			children = (
 				4BFFEF45215D9B24006C3A3D /* SwiftOwlTests.swift */,
 				4BFFEF47215D9B24006C3A3D /* Info.plist */,
 			);
-			path = SwiftOwlTests;
+			path = UnitSpecs;
 			sourceTree = "<group>";
 		};
 		A154CDA8E2C00DF8F8A8AA34 /* Frameworks */ = {
@@ -352,9 +352,9 @@
 			productReference = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4BFFEF3D215D9B24006C3A3D /* SwiftOwlTests */ = {
+		4BFFEF3D215D9B24006C3A3D /* UnitSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwlTests" */;
+			buildConfigurationList = 4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "UnitSpecs" */;
 			buildPhases = (
 				4BFFEF3A215D9B24006C3A3D /* Sources */,
 				4BFFEF3B215D9B24006C3A3D /* Frameworks */,
@@ -366,9 +366,9 @@
 				4BFFEF41215D9B24006C3A3D /* PBXTargetDependency */,
 				4BFFEF43215D9B24006C3A3D /* PBXTargetDependency */,
 			);
-			name = SwiftOwlTests;
+			name = UnitSpecs;
 			productName = SwiftOwlTests;
-			productReference = 4BFFEF3E215D9B24006C3A3D /* SwiftOwlTests.xctest */;
+			productReference = 4BFFEF3E215D9B24006C3A3D /* UnitSpecs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +419,7 @@
 				4BAFF277215D4B0F003B0726 /* AppSpecs */,
 				4BAFF282215D4B0F003B0726 /* UITests */,
 				4BFFEF35215D9B24006C3A3D /* SwiftOwl */,
-				4BFFEF3D215D9B24006C3A3D /* SwiftOwlTests */,
+				4BFFEF3D215D9B24006C3A3D /* UnitSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -929,8 +929,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftOwlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -950,8 +949,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftOwlTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1013,7 +1011,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "SwiftOwlTests" */ = {
+		4BFFEF53215D9B24006C3A3D /* Build configuration list for PBXNativeTarget "UnitSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BFFEF4F215D9B24006C3A3D /* Debug */,
