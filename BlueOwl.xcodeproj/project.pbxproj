@@ -1030,7 +1030,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A646CAEB8A5010F713D5E7E3 /* Pods-UnitSpecs.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1050,7 +1049,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
