@@ -16,6 +16,7 @@ end
 
 target 'BlueOwl' do
     use_frameworks!
+    pod 'SwinjectStoryboard'
 
     target 'AppSpecs' do
         inherit! :search_paths
@@ -27,4 +28,3 @@ target 'BlueOwl' do
         bdd_pods
     end
 end
-
