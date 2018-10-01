@@ -15,6 +15,7 @@
 		4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */; };
 		4BAFF288215D4B0F003B0726 /* UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* UITest.swift */; };
 		4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
+		4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */; };
 		4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
 		4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
@@ -102,6 +103,7 @@
 		4BAFF295215D8772003B0726 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4BAFF296215D8772003B0726 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		4BAFF299215D893D003B0726 /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
+		4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				4BAFF267215D4B0E003B0726 /* AppDelegate.swift */,
 				4BAFF269215D4B0E003B0726 /* ViewController.swift */,
+				4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */,
 				4BAFF26B215D4B0E003B0726 /* Main.storyboard */,
 				4BAFF26E215D4B0F003B0726 /* Assets.xcassets */,
 				4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */,
@@ -671,6 +674,7 @@
 			files = (
 				4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */,
 				4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */,
+				4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

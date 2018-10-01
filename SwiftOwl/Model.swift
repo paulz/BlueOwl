@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct Model {
+public struct Model {
+    public init() {
+
+    }
     let field = "value"
 }
