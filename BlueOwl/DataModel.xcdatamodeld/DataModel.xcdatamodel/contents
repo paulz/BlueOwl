@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Challange" representedClassName="Challange" syncable="YES" codeGenerationType="class">
+        <attribute name="hint" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="creator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="challanges" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="challanges" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Challange" inverseName="creator" inverseEntity="Challange" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-2" positionY="-397" width="128" height="73"/>
+        <element name="Challange" positionX="250" positionY="-397" width="128" height="73"/>
+    </elements>
+</model>
