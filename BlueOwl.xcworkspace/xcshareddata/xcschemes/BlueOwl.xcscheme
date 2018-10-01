@@ -31,12 +31,12 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BAFF282215D4B0F003B0726"
-               BuildableName = "UITests.xctest"
-               BlueprintName = "UITests"
+               BlueprintIdentifier = "4BFFEF3D215D9B24006C3A3D"
+               BuildableName = "UnitSpecs.xctest"
+               BlueprintName = "UnitSpecs"
                ReferencedContainer = "container:BlueOwl.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -51,12 +51,12 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BFFEF3D215D9B24006C3A3D"
-               BuildableName = "UnitSpecs.xctest"
-               BlueprintName = "UnitSpecs"
+               BlueprintIdentifier = "4BAFF282215D4B0F003B0726"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
                ReferencedContainer = "container:BlueOwl.xcodeproj">
             </BuildableReference>
          </TestableReference>
