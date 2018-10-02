@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode9.4
+xcode_workspace: BlueOwl.xcworkspace
+xcode_scheme: BlueOwl
+xcode_sdk: iphonesimulator11.4
+git:
+  depth: false
+cache:
+  cocoapods: true
+bundler_args: --no-deployment
+after_success:
+  - bash <(curl -s 'https://codecov.io/bash') -Z -J '^BlueOwl$' -X gcov -X fix
+before_install:
+  - ls -la Example/Pods/Manifest.lock && echo Skipping cocoapods repo update || git -C ~/.cocoapods/repos/master/ pull --quiet
+script:
+  - set -o pipefail && xcodebuild test -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -destination "platform=iOS Simulator,name=iPhone X" | xcpretty -f `xcpretty-travis-formatter`
