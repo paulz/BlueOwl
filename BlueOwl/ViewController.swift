@@ -10,5 +10,8 @@ class ViewController: UIViewController {
         if let challenges = try? context.fetch(Challenge.fetchRequest()) {
             NSLog("challenges: \(challenges.count)")
         }
+        if let users = try? context.fetch(User.fetchRequest()) {
+            NSLog("users: \(users.count)")
+        }
     }
 }

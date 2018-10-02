@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28F06F790FD4540E06C7F0F1 /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467FBA055719461F72D3456E /* Pods_UITests.framework */; };
-		4B60F83C2163ECA000D119D5 /* iSpyChallenge.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F83B2163EC9F00D119D5 /* iSpyChallenge.xcdatamodel */; };
+		4B60F83C2163ECA000D119D5 /* iSpyData.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */; };
+		4B60F8402163F38300D119D5 /* SampleData.xcappdata in Resources */ = {isa = PBXBuildFile; fileRef = 4B60F83F2163F38300D119D5 /* SampleData.xcappdata */; };
 		4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF267215D4B0E003B0726 /* AppDelegate.swift */; };
 		4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF269215D4B0E003B0726 /* ViewController.swift */; };
 		4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26B215D4B0E003B0726 /* Main.storyboard */; };
@@ -91,7 +92,8 @@
 		35325C161050E1ED4488B904 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		45C47D67A2E27E2B75865122 /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		467FBA055719461F72D3456E /* Pods_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B60F83B2163EC9F00D119D5 /* iSpyChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = iSpyChallenge.xcdatamodel; path = iSpyChallenge.xcdatamodeld/iSpyChallenge.xcdatamodel; sourceTree = "<group>"; };
+		4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = iSpyData.xcdatamodel; path = iSpyChallenge.xcdatamodeld/iSpyData.xcdatamodel; sourceTree = "<group>"; };
+		4B60F83F2163F38300D119D5 /* SampleData.xcappdata */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SampleData.xcappdata; sourceTree = "<group>"; };
 		4BAFF264215D4B0E003B0726 /* BlueOwl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueOwl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFF267215D4B0E003B0726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BAFF269215D4B0E003B0726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,11 +205,12 @@
 		4BAFF266215D4B0E003B0726 /* BlueOwl */ = {
 			isa = PBXGroup;
 			children = (
+				4B60F83F2163F38300D119D5 /* SampleData.xcappdata */,
 				4BAFF267215D4B0E003B0726 /* AppDelegate.swift */,
 				4BAFF269215D4B0E003B0726 /* ViewController.swift */,
 				4BD9DE222162E3BD00429DBD /* DataStore.swift */,
 				4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */,
-				4B60F83B2163EC9F00D119D5 /* iSpyChallenge.xcdatamodel */,
+				4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */,
 				4BD9DE262162F14700429DBD /* CoreDataGenerated */,
 				4BAFF26B215D4B0E003B0726 /* Main.storyboard */,
 				4BAFF26E215D4B0F003B0726 /* Assets.xcassets */,
@@ -465,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B60F8402163F38300D119D5 /* SampleData.xcappdata in Resources */,
 				4BAFF272215D4B0F003B0726 /* LaunchScreen.storyboard in Resources */,
 				4BAFF26F215D4B0F003B0726 /* Assets.xcassets in Resources */,
 				4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */,
@@ -680,7 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAFF26A215D4B0E003B0726 /* ViewController.swift in Sources */,
-				4B60F83C2163ECA000D119D5 /* iSpyChallenge.xcdatamodel in Sources */,
+				4B60F83C2163ECA000D119D5 /* iSpyData.xcdatamodel in Sources */,
 				4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */,
 				4BD9DE232162E3BD00429DBD /* DataStore.swift in Sources */,
 				4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */,

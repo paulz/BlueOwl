@@ -83,13 +83,13 @@ class DataModelSpec: QuickSpec {
                         it("should find all challenges") {
                             let request: NSFetchRequest<Challenge> = Challenge.fetchRequest()
                             let beforeAdding = try! objectContext.fetch(request)
-                            expect(beforeAdding.count) == 0
+                            expect(beforeAdding.count) == 6
 
                             let created = Challenge(context: objectContext)
                             expect(created).notTo(beNil())
 
                             let afterAdding = try! objectContext.fetch(request)
-                            expect(afterAdding.count) == 1
+                            expect(afterAdding.count) == 7
                         }
                     }
                 }
