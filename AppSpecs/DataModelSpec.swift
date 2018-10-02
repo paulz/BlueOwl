@@ -18,9 +18,23 @@ class DataModelSpec: QuickSpec {
             }
 
             context("Entities") {
-                it("should be user and challenges") {
+                it("should be user, challenges, match and rating") {
                     let names = objectContext.persistentStoreCoordinator?.managedObjectModel.entitiesByName.keys.map {$0}
                     expect(names).to(contain(["User", "Challenge", "Match", "Rating"]))
+                }
+
+                context("Match and Rating") {
+                    it("should load all matches") {
+                        let request: NSFetchRequest<Match> = Match.fetchRequest()
+                        let matches = try! objectContext.fetch(request)
+                        expect(matches.count) == 10
+                    }
+
+                    it("should load all ratings") {
+                        let request: NSFetchRequest<Rating> = Rating.fetchRequest()
+                        let ratings = try! objectContext.fetch(request)
+                        expect(ratings.count) == 24
+                    }
                 }
             }
             context("User") {
