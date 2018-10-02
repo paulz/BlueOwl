@@ -4,7 +4,7 @@ class DataStore {
     var container: NSPersistentContainer!
 
     public func openExistingDatabase() -> NSManagedObjectContext? {
-        container = NSPersistentContainer(name: "DataModel")
+        container = NSPersistentContainer(name: "iSpyChallenge")
         container.loadPersistentStores { (description: NSPersistentStoreDescription, error: Error?) in
             assert(error == nil, "failed to create persistant store due to: \(error!)")
             assert(description.shouldInferMappingModelAutomatically)

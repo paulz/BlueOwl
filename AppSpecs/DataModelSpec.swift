@@ -18,9 +18,9 @@ class DataModelSpec: QuickSpec {
             }
 
             context("Entities") {
-                it("should be user and challanges") {
+                it("should be user and challenges") {
                     let names = objectContext.persistentStoreCoordinator?.managedObjectModel.entitiesByName.keys.map {$0}
-                    expect(names) == ["User", "Challange"]
+                    expect(names).to(contain(["User", "Challenge", "Match", "Rating"]))
                 }
             }
             context("User") {
@@ -33,31 +33,23 @@ class DataModelSpec: QuickSpec {
                 context("email") {
                     it("should allow valid emails") {
                         user.email = "user@example.com"
+                        user.username = "bob"
+                        user.avatarLargeHref = "https://randomuser.me/api/portraits/men/91.jpg"
+                        user.avatarMediumHref = "https://randomuser.me/api/portraits/med/men/91.jpg"
+                        user.avatarThumbnailHref = "https://randomuser.me/api/portraits/thumb/men/91.jpg"
                         try! objectContext.save()
                         expect(user.email) == "user@example.com"
                         expect(objectContext.hasChanges) == false
                     }
 
-                    it("should not allow too short strings") {
-                        let expected = CocoaError.error(.validationStringTooShort) as NSError
+                    it("should raise validation errors when there are missing fields") {
+                        let expected = CocoaError.error(.validationMultipleErrors) as NSError
                         user.email = "@"
                         expect {
                             try user.managedObjectContext?.save()
                             }.to(throwError{ (e:NSError) in
                                 expect(e.domain) == expected.domain
                                 expect(e.code) == expected.code
-                                expect(e.userInfo["NSValidationErrorKey"] as? String) == "email"
-                                expect(e.userInfo["NSValidationErrorValue"] as? String) == "@"
-                                expect(e.userInfo["NSValidationErrorObject"] as? NSManagedObject) == user
-                            })
-                    }
-
-                    it("should not allow too long strings") {
-                        user.email = String(repeating: "a@b", count: 1000)
-                        expect {
-                            try user.managedObjectContext?.save()
-                            }.to(throwError { (e: NSError) in
-                                expect(e.code) == CocoaError.validationStringTooLong.rawValue
                             })
                     }
                 }
@@ -70,30 +62,30 @@ class DataModelSpec: QuickSpec {
                     }
                 }
 
-                context("Challange") {
-                    it("should have no challanges initially") {
-                        let challanges = user.challanges!
-                        expect(challanges.count) == 0
+                context("Challenge") {
+                    it("should have no challenges initially") {
+                        let challenges = user.challenges!
+                        expect(challenges.count) == 0
                     }
 
-                    context("addToChallanges") {
+                    context("addToChallenges") {
                         it("should make user a creator, clearing creator removes challange") {
-                            let challange = Challange(context: objectContext)
-                            user.addToChallanges(challange)
-                            expect(user.challanges!.count) == 1
+                            let challange = Challenge(context: objectContext)
+                            user.addToChallenges(challange)
+                            expect(user.challenges!.count) == 1
                             expect(challange.creator) == user
                             challange.creator = nil
-                            expect(user.challanges!.count) == 0
+                            expect(user.challenges!.count) == 0
                         }
                     }
 
                     context("fetchRequest") {
-                        it("should find all challanges") {
-                            let request: NSFetchRequest<Challange> = Challange.fetchRequest()
+                        it("should find all challenges") {
+                            let request: NSFetchRequest<Challenge> = Challenge.fetchRequest()
                             let beforeAdding = try! objectContext.fetch(request)
                             expect(beforeAdding.count) == 0
 
-                            let created = Challange(context: objectContext)
+                            let created = Challenge(context: objectContext)
                             expect(created).notTo(beNil())
 
                             let afterAdding = try! objectContext.fetch(request)

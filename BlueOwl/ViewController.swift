@@ -7,8 +7,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let challanges = try? context.fetch(Challange.fetchRequest()) {
-            NSLog("challanges: \(challanges.count)")
+        if let challenges = try? context.fetch(Challenge.fetchRequest()) {
+            NSLog("challenges: \(challenges.count)")
         }
     }
 }

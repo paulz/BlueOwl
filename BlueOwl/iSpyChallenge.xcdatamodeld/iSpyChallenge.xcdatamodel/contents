@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Challenge" representedClassName="Challenge" syncable="YES" codeGenerationType="class">
+        <attribute name="hint" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photoHref" attributeType="String" syncable="YES"/>
+        <relationship name="creator" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="challenges" inverseEntity="User" syncable="YES"/>
+        <relationship name="matches" toMany="YES" deletionRule="Nullify" destinationEntity="Match" inverseName="challenge" inverseEntity="Match" syncable="YES"/>
+        <relationship name="ratings" toMany="YES" deletionRule="Nullify" destinationEntity="Rating" inverseName="challenge" inverseEntity="Rating" syncable="YES"/>
+    </entity>
+    <entity name="Match" representedClassName="Match" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photoHref" attributeType="String" syncable="YES"/>
+        <attribute name="verified" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="challenge" maxCount="1" deletionRule="Nullify" destinationEntity="Challenge" inverseName="matches" inverseEntity="Challenge" syncable="YES"/>
+        <relationship name="player" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="matches" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Rating" representedClassName="Rating" syncable="YES" codeGenerationType="class">
+        <attribute name="stars" attributeType="Integer 16" minValueString="0" maxValueString="5" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="challenge" maxCount="1" deletionRule="Nullify" destinationEntity="Challenge" inverseName="ratings" inverseEntity="Challenge" syncable="YES"/>
+        <relationship name="player" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="ratings" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="avatarLargeHref" attributeType="String" syncable="YES"/>
+        <attribute name="avatarMediumHref" attributeType="String" syncable="YES"/>
+        <attribute name="avatarThumbnailHref" attributeType="String" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="username" attributeType="String" syncable="YES"/>
+        <relationship name="challenges" toMany="YES" deletionRule="Nullify" destinationEntity="Challenge" inverseName="creator" inverseEntity="Challenge" syncable="YES"/>
+        <relationship name="matches" toMany="YES" deletionRule="Nullify" destinationEntity="Match" inverseName="player" inverseEntity="Match" syncable="YES"/>
+        <relationship name="ratings" toMany="YES" deletionRule="Nullify" destinationEntity="Rating" inverseName="player" inverseEntity="Rating" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Challenge" positionX="-342" positionY="-387" width="128" height="150"/>
+        <element name="Match" positionX="-90" positionY="-288" width="128" height="135"/>
+        <element name="Rating" positionX="-360" positionY="-70" width="128" height="90"/>
+        <element name="User" positionX="-576" positionY="-306" width="128" height="165"/>
+    </elements>
+</model>
