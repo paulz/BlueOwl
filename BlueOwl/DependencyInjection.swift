@@ -1,13 +1,14 @@
 import SwinjectStoryboard
 import SwiftOwl
+import CoreData
 
 extension SwinjectStoryboard {
     public static func setup() {
-        defaultContainer.register(Model.self) { _ in
-            return Model()
-        }
+        defaultContainer.register(NSManagedObjectContext.self) { _ in
+            return DataStore().openExistingDatabase()!
+        }.inObjectScope(.container)
         defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
-            c.model = r.resolve(Model.self)
+            c.context = r.resolve(NSManagedObjectContext.self)
         }
     }
 }

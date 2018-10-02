@@ -11,6 +11,7 @@ class DataStore {
             assert(description.shouldMigrateStoreAutomatically)
             assert(!description.shouldAddStoreAsynchronously)
             assert(!description.isReadOnly)
+            NSLog("persistent store path: \(description.url!.path)")
         }
         return container.viewContext
     }
