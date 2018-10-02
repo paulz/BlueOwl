@@ -1,11 +1,3 @@
-//
-//  DataStore.swift
-//  BlueOwl
-//
-//  Created by Paul Zabelin on 10/1/18.
-//  Copyright © 2018 Paul Zabelin. All rights reserved.
-//
-
 import CoreData
 
 class DataStore {
