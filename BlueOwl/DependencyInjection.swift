@@ -7,7 +7,7 @@ extension SwinjectStoryboard {
         defaultContainer.register(NSManagedObjectContext.self) { _ in
             return DataStore().openExistingDatabase()!
         }.inObjectScope(.container)
-        defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
+        defaultContainer.storyboardInitCompleted(ChallengesViewController.self) { r, c in
             c.context = r.resolve(NSManagedObjectContext.self)
         }
     }
