@@ -30,11 +30,43 @@ class DataModelSpec: QuickSpec {
                     user = User(context: objectContext)
                 }
 
+                context("email") {
+                    it("should allow valid emails") {
+                        user.email = "user@example.com"
+                        try! objectContext.save()
+                        expect(user.email) == "user@example.com"
+                        expect(objectContext.hasChanges) == false
+                    }
+
+                    it("should not allow too short strings") {
+                        let expected = CocoaError.error(.validationStringTooShort) as NSError
+                        user.email = "@"
+                        expect {
+                            try user.managedObjectContext?.save()
+                            }.to(throwError{ (e:NSError) in
+                                expect(e.domain) == expected.domain
+                                expect(e.code) == expected.code
+                                expect(e.userInfo["NSValidationErrorKey"] as? String) == "email"
+                                expect(e.userInfo["NSValidationErrorValue"] as? String) == "@"
+                                expect(e.userInfo["NSValidationErrorObject"] as? NSManagedObject) == user
+                            })
+                    }
+
+                    it("should not allow too long strings") {
+                        user.email = String(repeating: "a@b", count: 1000)
+                        expect {
+                            try user.managedObjectContext?.save()
+                            }.to(throwError { (e: NSError) in
+                                expect(e.code) == CocoaError.validationStringTooLong.rawValue
+                            })
+                    }
+                }
+
                 context("fetchRequest") {
                     it("should load all users") {
                         let request: NSFetchRequest<User> = User.fetchRequest()
                         let users = try! objectContext.fetch(request)
-                        expect(users.count) == 1
+                        expect(users.count) >= 1
                     }
                 }
 
