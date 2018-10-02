@@ -37,11 +37,9 @@ extension ChallengesViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Challenge Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Challenge Cell", for: indexPath) as! ChallengeCell
         let challenge = fetchController.object(at: indexPath)
-
-        cell.textLabel?.text = challenge.hint
-        cell.detailTextLabel?.text = challenge.creator?.email
+        cell.setChallenge(challenge)
 
         return cell
     }
