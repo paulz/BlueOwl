@@ -2,7 +2,7 @@ import CoreData
 
 class DataStore {
     var container: NSPersistentContainer!
-    
+
     func loadSampleData() {
         let bundleURL = Bundle.main.url(forResource: "SampleData", withExtension: "xcappdata")!
         let contentsURL = bundleURL.appendingPathComponent("AppData")
@@ -14,16 +14,21 @@ class DataStore {
         while let sourceUrl = enumerator.nextObject() as? URL {
             guard let resourceValues = try? sourceUrl.resourceValues(forKeys: [.isDirectoryKey]),
                 let isDirectory = resourceValues.isDirectory,
-                !isDirectory else { continue }
+                !isDirectory else {
+                    continue
+            }
             let destinationRoot = fileManager.urls(for: .libraryDirectory, in: .userDomainMask).last!.deletingLastPathComponent()
             let path = sourceUrl.standardizedFileURL.path.replacingOccurrences(of: contentsURL.standardizedFileURL.path, with: "")
             let destinationURL = destinationRoot.appendingPathComponent(path)
             try? fileManager.removeItem(at: destinationURL)
-            try! fileManager.createDirectory(at: destinationURL.deletingLastPathComponent(), withIntermediateDirectories: true, attributes: nil)
-            try! fileManager.copyItem(at: sourceUrl, to: destinationURL)
+            try! fileManager.createDirectory(at: destinationURL.deletingLastPathComponent(),
+                                             withIntermediateDirectories: true,
+                                             attributes: nil)
+            try! fileManager.copyItem(at: sourceUrl,
+                                      to: destinationURL)
         }
     }
-    
+
     public func openExistingDatabase() -> NSManagedObjectContext? {
         loadSampleData()
         container = NSPersistentContainer(name: "iSpyData")

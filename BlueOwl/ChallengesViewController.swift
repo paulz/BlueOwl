@@ -7,8 +7,7 @@ class ChallengesViewController: UIViewController {
     var fetchController: NSFetchedResultsController<Challenge>!
     @IBOutlet weak var tableView: UITableView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func createFetchController() {
         let fetchRequest: NSFetchRequest<Challenge> = Challenge.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "hint", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -16,19 +15,13 @@ class ChallengesViewController: UIViewController {
                                                      managedObjectContext: context,
                                                      sectionNameKeyPath: nil,
                                                      cacheName: nil)
+    }
 
-        if let challenges = try? context.fetch(Challenge.fetchRequest()) {
-            NSLog("challenges: \(challenges.count)")
-        }
-        if let users = try? context.fetch(User.fetchRequest()) {
-            NSLog("users: \(users.count)")
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createFetchController()
         try? fetchController.performFetch()
     }
-}
-
-extension ChallengesViewController: NSFetchedResultsControllerDelegate {
-
 }
 
 extension ChallengesViewController: UITableViewDataSource {
@@ -40,12 +33,7 @@ extension ChallengesViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Challenge Cell", for: indexPath) as! ChallengeCell
         let challenge = fetchController.object(at: indexPath)
         cell.setChallenge(challenge)
-
         return cell
     }
-
-}
-
-extension ChallengesViewController: UITableViewDelegate {
 
 }
