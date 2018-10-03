@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/paulz/BlueOwl.svg?branch=master)](https://travis-ci.org/paulz/BlueOwl)
 [![codecov](https://codecov.io/gh/paulz/BlueOwl/branch/master/graph/badge.svg)](https://codecov.io/gh/paulz/BlueOwl)
 
-BlueOwl is an app setup with tests and is ready to fly.
+BlueOwl is https://github.com/BlueOwlDev/iSpyChallenge 100% test covered implementation.
 
 ![https://raw.githubusercontent.com/paulz/BlueOwl/master/BlueOwl/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png](https://raw.githubusercontent.com/paulz/BlueOwl/master/BlueOwl/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png)
 
@@ -56,3 +56,4 @@ UITest
     ✓ testNearMeShouldListExistingChallanges (5.250 seconds)
 	 Executed 1 test, with 0 failures (0 unexpected) in 5.250 (5.252) seconds
 ```
+see this output on CI server: https://travis-ci.org/paulz/BlueOwl/builds/436434625#L739
