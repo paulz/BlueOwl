@@ -18,12 +18,7 @@ public class ChallengeCell: UITableViewCell {
     
     func setChallenge(_ challenge: Challenge) {
         hintLabel.text = challenge.hint
-        let ratings = challenge.ratings!
-        let list = ratings.compactMap {$0 as? Rating}.compactMap {$0.stars?.intValue}
-        let total = list.reduce(0, +)
-        let average = total / ratings.count
-        ratingLabel.text = String(repeating: "★", count: average)
-
+        ratingLabel.text = String(repeating: "★", count: challenge.averageRating())
         userNameLabel.text = challenge.creator?.username
     }
 }

@@ -11,6 +11,8 @@
 		4B60F83C2163ECA000D119D5 /* iSpyData.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */; };
 		4B60F8402163F38300D119D5 /* SampleData.xcappdata in Resources */ = {isa = PBXBuildFile; fileRef = 4B60F83F2163F38300D119D5 /* SampleData.xcappdata */; };
 		4B60F842216416FF00D119D5 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F841216416FF00D119D5 /* ChallengeCell.swift */; };
+		4BA7AAE3216699DF003BC221 /* Challenge+CalculatedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7AAE2216699DF003BC221 /* Challenge+CalculatedProperties.swift */; };
+		4BA7AAE521669A44003BC221 /* ChallengeCalculatedPropertiesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7AAE421669A44003BC221 /* ChallengeCalculatedPropertiesSpec.swift */; };
 		4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF267215D4B0E003B0726 /* AppDelegate.swift */; };
 		4BAFF26A215D4B0E003B0726 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF269215D4B0E003B0726 /* ChallengesViewController.swift */; };
 		4BAFF26D215D4B0E003B0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF26B215D4B0E003B0726 /* Main.storyboard */; };
@@ -96,6 +98,8 @@
 		4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = iSpyData.xcdatamodel; path = iSpyChallenge.xcdatamodeld/iSpyData.xcdatamodel; sourceTree = "<group>"; };
 		4B60F83F2163F38300D119D5 /* SampleData.xcappdata */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SampleData.xcappdata; sourceTree = "<group>"; };
 		4B60F841216416FF00D119D5 /* ChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
+		4BA7AAE2216699DF003BC221 /* Challenge+CalculatedProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge+CalculatedProperties.swift"; sourceTree = "<group>"; };
+		4BA7AAE421669A44003BC221 /* ChallengeCalculatedPropertiesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCalculatedPropertiesSpec.swift; sourceTree = "<group>"; };
 		4BAFF264215D4B0E003B0726 /* BlueOwl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueOwl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAFF267215D4B0E003B0726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BAFF269215D4B0E003B0726 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +117,7 @@
 		4BD9DE212162E0E400429DBD /* TestBundleInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestBundleInfo.plist; sourceTree = "<group>"; };
 		4BD9DE222162E3BD00429DBD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		4BD9DE242162E54000429DBD /* DataModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelSpec.swift; sourceTree = "<group>"; };
-		4BD9DE262162F14700429DBD /* CoreDataGenerated */ = {isa = PBXFileReference; lastKnownFileType = text; name = CoreDataGenerated; path = "../../Intermediates.noindex/BlueOwl.build/Debug-iphonesimulator/BlueOwl.build/DerivedSources/CoreDataGenerated"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE5151D21669F4000398A21 /* iSpyData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iSpyData; path = "../../../Library/Developer/Xcode/DerivedData/BlueOwl-duawhqtcoimjgccwnehzbfuizhyv/Build/Intermediates.noindex/BlueOwl.build/Debug-iphonesimulator/BlueOwl.build/DerivedSources/CoreDataGenerated/iSpyData"; sourceTree = "<group>"; };
 		4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -212,9 +216,10 @@
 				4BAFF269215D4B0E003B0726 /* ChallengesViewController.swift */,
 				4B60F841216416FF00D119D5 /* ChallengeCell.swift */,
 				4BD9DE222162E3BD00429DBD /* DataStore.swift */,
+				4BA7AAE2216699DF003BC221 /* Challenge+CalculatedProperties.swift */,
 				4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */,
 				4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */,
-				4BD9DE262162F14700429DBD /* CoreDataGenerated */,
+				4BE5151D21669F4000398A21 /* iSpyData */,
 				4BAFF26B215D4B0E003B0726 /* Main.storyboard */,
 				4BAFF26E215D4B0F003B0726 /* Assets.xcassets */,
 				4BAFF270215D4B0F003B0726 /* LaunchScreen.storyboard */,
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				4BAFF299215D893D003B0726 /* FirstSpec.swift */,
+				4BA7AAE421669A44003BC221 /* ChallengeCalculatedPropertiesSpec.swift */,
 				4BD9DE242162E54000429DBD /* DataModelSpec.swift */,
 			);
 			path = AppSpecs;
@@ -692,6 +698,7 @@
 				4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */,
 				4BD9DE232162E3BD00429DBD /* DataStore.swift in Sources */,
 				4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */,
+				4BA7AAE3216699DF003BC221 /* Challenge+CalculatedProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +706,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA7AAE521669A44003BC221 /* ChallengeCalculatedPropertiesSpec.swift in Sources */,
 				4BD9DE252162E54000429DBD /* DataModelSpec.swift in Sources */,
 				4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */,
 			);
