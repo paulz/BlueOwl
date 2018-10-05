@@ -40,7 +40,7 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            if config.name == "Debug"
+            if config.name == 'Debug'
                 config.build_settings.delete('SWIFT_OPTIMIZATION_LEVEL')
             end
         end

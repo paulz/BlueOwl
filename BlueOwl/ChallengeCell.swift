@@ -18,7 +18,7 @@ public class ChallengeCell: UITableViewCell {
     
     func setChallenge(_ challenge: Challenge) {
         hintLabel.text = challenge.hint
-        ratingLabel.text = String(repeating: "★", count: challenge.averageRating())
+        ratingLabel.text = String(repeating: "★", count: challenge.averageRoundedRating())
         userNameLabel.text = challenge.creator?.username
     }
 }

@@ -18,20 +18,24 @@ class ChallengeCalculatedPropertiesSpec: QuickSpec {
             }
 
             context("average rating") {
-                it("should be three for ratings 1, 2, 5") {
+                it("should be 0 when there are no ratings with stars") {
                     let challenge = Challenge(context: objectContext)
-                    let rating1 = Rating(context: objectContext)
-                    rating1.stars = 1
-                    let rating2 = Rating(context: objectContext)
-                    rating2.stars = 2
-                    let rating3 = Rating(context: objectContext)
-                    rating3.stars = 5
+                    expect(challenge.averageRoundedRating()) == 0
 
-                    challenge.addToRatings(rating1)
-                    challenge.addToRatings(rating2)
-                    challenge.addToRatings(rating3)
+                    challenge.addToRatings(Rating(context: objectContext))
+                    expect(challenge.averageRoundedRating()) == 0
+                }
 
-                    expect(challenge.averageRating()) == 3
+                it("should be 3 for ratings with 1, 2 and 5 stars") {
+                    let challenge = Challenge(context: objectContext)
+
+                    [1, 2, 5].forEach { stars in
+                        let rating = Rating(context: objectContext)
+                        rating.stars = NSNumber(integerLiteral: stars)
+                        challenge.addToRatings(rating)
+                    }
+
+                    expect(challenge.averageRoundedRating()) == 3
                 }
                 
                 it("should be 1 for ratings 1") {
@@ -41,7 +45,7 @@ class ChallengeCalculatedPropertiesSpec: QuickSpec {
 
                     challenge.addToRatings(rating)
 
-                    expect(challenge.averageRating()) == 1
+                    expect(challenge.averageRoundedRating()) == 1
                 }
             }
         }

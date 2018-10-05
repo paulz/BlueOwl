@@ -9,11 +9,11 @@
 import Foundation
 
 extension Challenge {
-    func averageRating() -> Int {
-        let setOfRatings = ratings?.allObjects as! [Rating]
-        let stars = setOfRatings.compactMap { $0.stars?.intValue }
-        let totalRatings = stars.reduce(0, +)
-        let average = Double(totalRatings) / Double(stars.count)
-        return Int(average.rounded())
+    func averageRating() -> Double {
+        return ratings?.value(forKeyPath: "@avg.stars") as? Double ?? 0.0
+    }
+
+    func averageRoundedRating() -> Int {
+        return Int(averageRating().rounded())
     }
 }
