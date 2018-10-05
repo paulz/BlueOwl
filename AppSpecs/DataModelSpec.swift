@@ -1,38 +1,39 @@
 import Quick
 import Nimble
 import CoreData
+import SwinjectStoryboard
 @testable import BlueOwl
 
 class DataModelSpec: QuickSpec {
     override func spec() {
         describe("Core Data Model") {
-            let store = DataStore()
-            var objectContext: NSManagedObjectContext!
+            let container = SwinjectStoryboard.defaultContainer
+            var moc: NSManagedObjectContext!
 
             beforeEach {
-                objectContext = store.openExistingDatabase()!
+                moc = container.resolve(NSManagedObjectContext.self)
             }
 
             afterEach {
-                objectContext.rollback()
+                moc.rollback()
             }
 
             context("Entities") {
                 it("should be user, challenges, match and rating") {
-                    let names = objectContext.persistentStoreCoordinator?.managedObjectModel.entitiesByName.keys.map {$0}
+                    let names = moc.persistentStoreCoordinator?.managedObjectModel.entitiesByName.keys.map {$0}
                     expect(names).to(contain(["User", "Challenge", "Match", "Rating"]))
                 }
 
                 context("Match and Rating") {
                     it("should load all matches") {
                         let request: NSFetchRequest<Match> = Match.fetchRequest()
-                        let matches = try! objectContext.fetch(request)
+                        let matches = try! moc.fetch(request)
                         expect(matches.count) == 10
                     }
 
                     it("should load all ratings") {
                         let request: NSFetchRequest<Rating> = Rating.fetchRequest()
-                        let ratings = try! objectContext.fetch(request)
+                        let ratings = try! moc.fetch(request)
                         expect(ratings.count) == 24
                     }
                 }
@@ -41,7 +42,7 @@ class DataModelSpec: QuickSpec {
                 var user: User!
 
                 beforeEach {
-                    user = User(context: objectContext)
+                    user = User(context: moc)
                 }
 
                 context("email") {
@@ -51,9 +52,9 @@ class DataModelSpec: QuickSpec {
                         user.avatarLargeHref = "https://randomuser.me/api/portraits/men/91.jpg"
                         user.avatarMediumHref = "https://randomuser.me/api/portraits/med/men/91.jpg"
                         user.avatarThumbnailHref = "https://randomuser.me/api/portraits/thumb/men/91.jpg"
-                        try! objectContext.save()
+                        try! moc.save()
                         expect(user.email) == "user@example.com"
-                        expect(objectContext.hasChanges) == false
+                        expect(moc.hasChanges) == false
                     }
 
                     it("should raise validation errors when there are missing fields") {
@@ -71,7 +72,7 @@ class DataModelSpec: QuickSpec {
                 context("fetchRequest") {
                     it("should load all users") {
                         let request: NSFetchRequest<User> = User.fetchRequest()
-                        let users = try! objectContext.fetch(request)
+                        let users = try! moc.fetch(request)
                         expect(users.count) >= 1
                     }
                 }
@@ -84,7 +85,7 @@ class DataModelSpec: QuickSpec {
 
                     context("addToChallenges") {
                         it("should make user a creator, clearing creator removes challange") {
-                            let challange = Challenge(context: objectContext)
+                            let challange = Challenge(context: moc)
                             user.addToChallenges(challange)
                             expect(user.challenges!.count) == 1
                             expect(challange.creator) == user
@@ -96,13 +97,13 @@ class DataModelSpec: QuickSpec {
                     context("fetchRequest") {
                         it("should find all challenges") {
                             let request: NSFetchRequest<Challenge> = Challenge.fetchRequest()
-                            let beforeAdding = try! objectContext.fetch(request)
+                            let beforeAdding = try! moc.fetch(request)
                             expect(beforeAdding.count) == 6
 
-                            let created = Challenge(context: objectContext)
+                            let created = Challenge(context: moc)
                             expect(created).notTo(beNil())
 
-                            let afterAdding = try! objectContext.fetch(request)
+                            let afterAdding = try! moc.fetch(request)
                             expect(afterAdding.count) == 7
                         }
                     }

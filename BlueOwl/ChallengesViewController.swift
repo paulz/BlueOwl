@@ -7,7 +7,7 @@ class ChallengesViewController: UIViewController {
     var fetchController: NSFetchedResultsController<Challenge>!
     @IBOutlet weak var tableView: UITableView!
 
-    func createFetchController() {
+    func fetchData() {
         let fetchRequest: NSFetchRequest<Challenge> = Challenge.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "hint", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -15,18 +15,13 @@ class ChallengesViewController: UIViewController {
                                                      managedObjectContext: context,
                                                      sectionNameKeyPath: nil,
                                                      cacheName: nil)
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        createFetchController()
         try? fetchController.performFetch()
     }
 }
 
 extension ChallengesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fetchController.fetchedObjects?.count ?? 0
+        return fetchController.fetchedObjects!.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

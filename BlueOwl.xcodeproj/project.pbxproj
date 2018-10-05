@@ -21,8 +21,8 @@
 		4BAFF288215D4B0F003B0726 /* UITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF287215D4B0F003B0726 /* UITest.swift */; };
 		4BAFF29A215D893D003B0726 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
 		4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */; };
-		4BD9DE232162E3BD00429DBD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9DE222162E3BD00429DBD /* DataStore.swift */; };
 		4BD9DE252162E54000429DBD /* DataModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9DE242162E54000429DBD /* DataModelSpec.swift */; };
+		4BFECF292167367600652E6C /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFECF282167367600652E6C /* Demo.swift */; };
 		4BFFEF3F215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
 		4BFFEF48215D9B24006C3A3D /* SwiftOwl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
@@ -115,9 +115,9 @@
 		4BAFF299215D893D003B0726 /* FirstSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
 		4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		4BD9DE212162E0E400429DBD /* TestBundleInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestBundleInfo.plist; sourceTree = "<group>"; };
-		4BD9DE222162E3BD00429DBD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		4BD9DE242162E54000429DBD /* DataModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelSpec.swift; sourceTree = "<group>"; };
 		4BE5151D21669F4000398A21 /* iSpyData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iSpyData; path = "../../../Library/Developer/Xcode/DerivedData/BlueOwl-duawhqtcoimjgccwnehzbfuizhyv/Build/Intermediates.noindex/BlueOwl.build/Debug-iphonesimulator/BlueOwl.build/DerivedSources/CoreDataGenerated/iSpyData"; sourceTree = "<group>"; };
+		4BFECF282167367600652E6C /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOwl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,9 +215,9 @@
 				4BAFF267215D4B0E003B0726 /* AppDelegate.swift */,
 				4BAFF269215D4B0E003B0726 /* ChallengesViewController.swift */,
 				4B60F841216416FF00D119D5 /* ChallengeCell.swift */,
-				4BD9DE222162E3BD00429DBD /* DataStore.swift */,
 				4BA7AAE2216699DF003BC221 /* Challenge+CalculatedProperties.swift */,
 				4BD9DE1C2162DD2D00429DBD /* DependencyInjection.swift */,
+				4BFECF282167367600652E6C /* Demo.swift */,
 				4B60F83B2163EC9F00D119D5 /* iSpyData.xcdatamodel */,
 				4BE5151D21669F4000398A21 /* iSpyData */,
 				4BAFF26B215D4B0E003B0726 /* Main.storyboard */,
@@ -563,11 +563,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,9 +698,9 @@
 			files = (
 				4BAFF26A215D4B0E003B0726 /* ChallengesViewController.swift in Sources */,
 				4B60F842216416FF00D119D5 /* ChallengeCell.swift in Sources */,
+				4BFECF292167367600652E6C /* Demo.swift in Sources */,
 				4B60F83C2163ECA000D119D5 /* iSpyData.xcdatamodel in Sources */,
 				4BAFF268215D4B0E003B0726 /* AppDelegate.swift in Sources */,
-				4BD9DE232162E3BD00429DBD /* DataStore.swift in Sources */,
 				4BD9DE1D2162DD2D00429DBD /* DependencyInjection.swift in Sources */,
 				4BA7AAE3216699DF003BC221 /* Challenge+CalculatedProperties.swift in Sources */,
 			);
