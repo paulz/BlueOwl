@@ -1,9 +1,8 @@
 language: objective-c
-osx_image: xcode9.4
+osx_image: xcode10
 xcode_workspace: BlueOwl.xcworkspace
 xcode_scheme: BlueOwl
-xcode_sdk: iphonesimulator11.4
-env: XCODE_DESNITATION='platform=iOS Simulator,name=iPhone X'
+env: XCODE_DESNITATION='platform=iOS Simulator,name=iPhone XS'
 git:
   depth: false
 cache:
