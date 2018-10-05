@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OtM-qJ-5m3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OtM-qJ-5m3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,19 +35,19 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-Wp-Ewj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="113.5" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 wins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="712-HO-CLu">
-                                                                    <rect key="frame" x="113.5" y="0.0" width="149.5" height="20.5"/>
+                                                                    <rect key="frame" x="114" y="0.0" width="149.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-Ek-t9e">
-                                                                    <rect key="frame" x="263" y="0.0" width="112" height="20.5"/>
+                                                                    <rect key="frame" x="263.5" y="0.0" width="111.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -121,7 +120,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="t7s-gx-Ees"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Challange" selectedImage="714-camera" id="NQq-yB-9xF"/>
+                    <tabBarItem key="tabBarItem" title="New Challange" image="714-camera" id="NQq-yB-9xF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QjX-BR-WU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,6 +132,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OtM-qJ-5m3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BGQ-Bq-05N">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -149,7 +149,7 @@
         <scene sceneID="Vr8-Ij-7Yf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jwv-8d-g6S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Near Me" selectedImage="1032-route" id="J4D-bI-0zx"/>
+                    <tabBarItem key="tabBarItem" title="Near Me" image="1032-route" id="J4D-bI-0zx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fyr-FS-EIr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
