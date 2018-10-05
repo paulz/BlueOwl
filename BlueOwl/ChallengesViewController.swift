@@ -25,10 +25,9 @@ extension ChallengesViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Challenge Cell", for: indexPath) as! ChallengeCell
-        let challenge = fetchController.object(at: indexPath)
-        cell.setChallenge(challenge)
+        let cell: ChallengeCell = tableView.cell(for: indexPath)
+        cell.setChallenge(fetchController.object(at: indexPath))
         return cell
     }
-
 }
+

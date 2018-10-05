@@ -1,11 +1,3 @@
-//
-//  Challenge+CalculatedProperties.swift
-//  BlueOwl
-//
-//  Created by Paul Zabelin on 10/4/18.
-//  Copyright © 2018 Paul Zabelin. All rights reserved.
-//
-
 import Foundation
 
 extension Challenge {

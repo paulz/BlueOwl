@@ -1,11 +1,3 @@
-//
-//  ChallengeCell.swift
-//  BlueOwl
-//
-//  Created by Paul Zabelin on 10/2/18.
-//  Copyright © 2018 Paul Zabelin. All rights reserved.
-//
-
 import UIKit
 
 public class ChallengeCell: UITableViewCell {

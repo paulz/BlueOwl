@@ -28,8 +28,8 @@
 		4BFFEF4B215D9B24006C3A3D /* SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; };
 		4BFFEF4C215D9B24006C3A3D /* SwiftOwl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFEF36215D9B24006C3A3D /* SwiftOwl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BFFEF54215D9E92006C3A3D /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF299215D893D003B0726 /* FirstSpec.swift */; };
-		4BFFEF56215DA1B8006C3A3D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF55215DA1B8006C3A3D /* Model.swift */; };
-		4BFFEF58215DA1F0006C3A3D /* ModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF57215DA1F0006C3A3D /* ModelSpec.swift */; };
+		4BFFEF56215DA1B8006C3A3D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF55215DA1B8006C3A3D /* UITableView+Extension.swift */; };
+		4BFFEF58215DA1F0006C3A3D /* UITableViewExtensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFEF57215DA1F0006C3A3D /* UITableViewExtensionSpec.swift */; };
 		7340D0A9A5B3D4BD1FDC5C88 /* Pods_UnitSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC3B9409992F90B667F559D /* Pods_UnitSpecs.framework */; };
 		E327D23CA5CC03EA67C468FA /* Pods_AppSpecs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2941CAAEC89C40F5FAE4A9A /* Pods_AppSpecs.framework */; };
 		ED9C9D20E56EF161AFD2AB85 /* Pods_SwiftOwl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915E773AE12BE9D1F3236BF /* Pods_SwiftOwl.framework */; };
@@ -122,8 +122,8 @@
 		4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOwl.h; sourceTree = "<group>"; };
 		4BFFEF39215D9B24006C3A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFFEF3E215D9B24006C3A3D /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BFFEF55215DA1B8006C3A3D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		4BFFEF57215DA1F0006C3A3D /* ModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSpec.swift; sourceTree = "<group>"; };
+		4BFFEF55215DA1B8006C3A3D /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		4BFFEF57215DA1F0006C3A3D /* UITableViewExtensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionSpec.swift; sourceTree = "<group>"; };
 		4D2D132D30135038CD64EC2B /* Pods-BlueOwl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueOwl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueOwl/Pods-BlueOwl.debug.xcconfig"; sourceTree = "<group>"; };
 		7A3F677F6C5927937CB516D3 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		9014032B51ABBEC3CD8BD06C /* Pods-AppSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppSpecs/Pods-AppSpecs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 			children = (
 				4BFFEF38215D9B24006C3A3D /* SwiftOwl.h */,
 				4BFFEF39215D9B24006C3A3D /* Info.plist */,
-				4BFFEF55215DA1B8006C3A3D /* Model.swift */,
+				4BFFEF55215DA1B8006C3A3D /* UITableView+Extension.swift */,
 			);
 			path = SwiftOwl;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 		4BFFEF44215D9B24006C3A3D /* UnitSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				4BFFEF57215DA1F0006C3A3D /* ModelSpec.swift */,
+				4BFFEF57215DA1F0006C3A3D /* UITableViewExtensionSpec.swift */,
 			);
 			path = UnitSpecs;
 			sourceTree = "<group>";
@@ -728,7 +728,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFFEF56215DA1B8006C3A3D /* Model.swift in Sources */,
+				4BFFEF56215DA1B8006C3A3D /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BFFEF58215DA1F0006C3A3D /* ModelSpec.swift in Sources */,
+				4BFFEF58215DA1F0006C3A3D /* UITableViewExtensionSpec.swift in Sources */,
 				4BFFEF54215D9E92006C3A3D /* FirstSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
