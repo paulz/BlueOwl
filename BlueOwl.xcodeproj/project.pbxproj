@@ -430,6 +430,7 @@
 				TargetAttributes = {
 					4BAFF263215D4B0E003B0726 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					4BAFF277215D4B0F003B0726 = {
 						CreatedOnToolsVersion = 10.0;
@@ -438,6 +439,7 @@
 					};
 					4BAFF282215D4B0F003B0726 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 4BAFF263215D4B0E003B0726;
 					};
 					4BFFEF35215D9B24006C3A3D = {
@@ -842,7 +844,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -894,7 +896,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1029,7 +1031,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestBundleInfo.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl.UnitSpecs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1040,7 +1042,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestBundleInfo.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwlTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueOwl.SwiftOwl.UnitSpecs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
