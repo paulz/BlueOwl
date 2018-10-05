@@ -1,15 +1,14 @@
-language: objective-c
+language: swift
 osx_image: xcode10
 xcode_workspace: BlueOwl.xcworkspace
 xcode_scheme: BlueOwl
 env: XCODE_DESNITATION='platform=iOS Simulator,name=iPhone XS'
 git:
   depth: false
+install: skip
 cache:
-  bundler: true
   directories:
     - DerivedData
-bundler_args: --no-deployment
 script:
   - set -o pipefail && xcodebuild test -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -destination "$XCODE_DESNITATION" -derivedDataPath DerivedData | xcpretty -f `xcpretty-travis-formatter`
 after_success:
