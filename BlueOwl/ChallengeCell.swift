@@ -13,5 +13,6 @@ public class ChallengeCell: UITableViewCell {
         ratingLabel.text = String(repeating: "★", count: challenge.averageRoundedRating())
         userNameLabel.text = "  by \(challenge.creator?.username ?? "Anonimous")"
         photoView.image = challenge.photoFilePath.flatMap {UIImage(contentsOfFile: $0)}
+        winsLabel.text = challenge.matches.flatMap {"\($0.count) wins"} ?? ""
     }
 }

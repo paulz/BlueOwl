@@ -9,7 +9,7 @@ class ChallengesViewController: UIViewController {
 
     func fetchData() {
         let fetchRequest: NSFetchRequest<Challenge> = Challenge.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "hint", ascending: true)
+        let sortDescriptor = NSSortDescriptor(keyPath: \Challenge.hint, ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         fetchController = NSFetchedResultsController(fetchRequest: fetchRequest,
                                                      managedObjectContext: context,
