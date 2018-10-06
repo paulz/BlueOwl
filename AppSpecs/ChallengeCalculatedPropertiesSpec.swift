@@ -18,6 +18,14 @@ class ChallengeCalculatedPropertiesSpec: QuickSpec {
                 moc.rollback()
             }
 
+            context("photoFilePath") {
+                it("should be a path to image within iSpyPhotos folder") {
+                    let challenge = Challenge(context: moc)
+                    challenge.photoHref = "horse"
+                    expect(challenge.photoFilePath).to(endWith("/Library/Application Support/iSpyPhotos/horse.jpg"))
+                }
+            }
+
             context("average rating") {
                 it("should be 0 when there are no ratings with stars") {
                     let challenge = Challenge(context: moc)
