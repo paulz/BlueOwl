@@ -17,5 +17,9 @@ class UITest: XCTestCase {
         tabBarsQuery.buttons["Near Me"].tap()
         XCTAssert(app.staticTexts["Many a developer has slept all night on the streets surrounding this three-level exhibition hall."].exists,
                   "This hint should be visible in the list")
+        let attachment = XCTAttachment(screenshot: app.windows.firstMatch.screenshot())
+        attachment.name = "ListChallanges"
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 }
