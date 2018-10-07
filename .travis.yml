@@ -1,4 +1,4 @@
-script: set -o pipefail && xcodebuild test -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -destination "$XCODE_DESNITATION" -derivedDataPath DerivedData | xcpretty -f `xcpretty-travis-formatter`
+script: set -o pipefail && xcodebuild test -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -destination "$XCODE_DESNITATION" -derivedDataPath DerivedData -parallel-testing-enabled NO | xcpretty -f `xcpretty-travis-formatter`
 after_success: bash <(curl -s 'https://codecov.io/bash') -Z -J '^[^P].*Owl$' -X gcov -X fix -D DerivedData
 git:
   depth: false
