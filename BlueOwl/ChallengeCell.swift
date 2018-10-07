@@ -11,7 +11,7 @@ public class ChallengeCell: UITableViewCell {
     func setChallenge(_ challenge: Challenge) {
         hintLabel.text = challenge.hint
         ratingLabel.text = String(repeating: "★", count: challenge.averageRoundedRating())
-        userNameLabel.text = "  by \(challenge.creator?.username ?? "Anonimous")"
+        userNameLabel.text = "  by \(challenge.creator?.username ?? "Anonymous")"
         photoView.image = challenge.photoFilePath.flatMap {UIImage(contentsOfFile: $0)}
         winsLabel.text = challenge.matches.flatMap {"\($0.count) wins"} ?? ""
     }
